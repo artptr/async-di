@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "server": "http-server"
+    "server": "http-server -c-1"
   },
   "dependencies": {
     "http-server": "^14.1.1"

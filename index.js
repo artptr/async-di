@@ -1,9 +1,7 @@
 import { Container } from './lib/Container.js';
 
-const container = new Container();
+Container.run(injector => {
+    const { 'app.Blog': blog } = injector;
 
-const { 'app.Blog': blog } = container.injector();
-
-container.ready().then(() => {
     blog.post('Hello World');
 });
